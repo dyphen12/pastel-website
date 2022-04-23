@@ -9,8 +9,8 @@
 
 function getUsername(ssid) {
 
-    //var std = "https://dimensionstrifeweb.herokuapp.com/user/%";
-    var std = "https://dimensionstrifeweb.herokuapp.com/user/%";
+    //var std = "http://127.0.0.1:5000/user/%";
+    var std = "http://127.0.0.1:5000/user/%";
 
 
     var url = std.replace('%', ssid);
@@ -106,7 +106,7 @@ function SignUpNow() {
 
     document.getElementById("signup-status").innerHTML = 'Signing up...';
 
-    var std = "https://dimensionstrifeweb.herokuapp.com/signup/%";
+    var std = "http://127.0.0.1:5000/signup/%";
 
     var query = '{"results": {"username": "&","name": "%","lastname": "#","email": "&","password": "$"}}'
 
@@ -208,7 +208,7 @@ function login() {
       if (res == 'fail'){
         // document.getElementById("demo").innerHTML = 'Wrong password or username';
 
-        document.getElementById("signup-message").innerHTML = 'Wrong password or username';
+        document.getElementById("login-message").innerHTML = 'Wrong password or username';
 
       } else {
         // document.getElementById("demo").innerHTML = 'Succesfully Logged in';
@@ -225,7 +225,7 @@ function login() {
 
       }
     };
-    xhttp.open("POST", "https://dimensionstrifeweb.herokuapp.com/auth", true);
+    xhttp.open("POST", "http://127.0.0.1:5000/auth", true);
     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhttp.send(credential);
 
@@ -244,7 +244,7 @@ function makeloginProcess() {
   return new Promise(resolve => {
     setTimeout(() => {
 
-    var drawSignin = document.getElementById('draw-signin').innerHTML = 'Bienvenido';
+    var drawSignin = document.getElementById('draw-signin').innerHTML = '';
     var drawLogin = document.getElementById('draw-login').style.display = 'none';
     document.getElementById('more-button').style.display = 'inline';
 
@@ -264,7 +264,7 @@ function makeloginProcess() {
 
           aname.className = "mdl-navigation__link mdl-typography--text-uppercase";
 
-          aname.innerHTML = 'Bienvenido, ';
+          aname.innerHTML = '';
 
           aname.id = 'user-welcome';
 
@@ -382,7 +382,7 @@ function getCookie(cname) {
 
 function getUsernameprofile(ssid) {
 
-    var std = "https://dimensionstrifeweb.herokuapp.com/user/%";
+    var std = "http://127.0.0.1:5000/user/%";
 
 
     var url = std.replace('%', ssid);
@@ -487,7 +487,7 @@ function dummy() {
 
 function apiVersion() {
 
-    var std = "https://dimensionstrifeweb.herokuapp.com/";
+    var std = "http://127.0.0.1:5000/";
 
 
     document.getElementById("version").innerHTML = 'Loading...';
