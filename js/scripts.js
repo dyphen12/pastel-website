@@ -169,7 +169,7 @@ function SignUpNow() {
       }
     };
     xhttp.open("GET", url);
-    xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhttp.setRequestHeader("Content-Type", "Access-Control-Allow-Origin");
     xhttp.send();
 
     return true;
@@ -226,7 +226,7 @@ function login() {
       }
     };
     xhttp.open("POST", "https://dimensionstrifeweb.herokuapp.com/auth", true);
-    xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhttp.setRequestHeader("Content-Type", "Access-Control-Allow-Origin");
     xhttp.send(credential);
 
 }
