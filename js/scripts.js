@@ -208,7 +208,7 @@ function login() {
       if (res == 'fail'){
         // document.getElementById("demo").innerHTML = 'Wrong password or username';
 
-        document.getElementById("signup-message").innerHTML = 'Usuario u contraseña incorrectos';
+        document.getElementById("signup-message").innerHTML = 'Wrong password or username';
 
       } else {
         // document.getElementById("demo").innerHTML = 'Succesfully Logged in';
