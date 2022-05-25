@@ -14,8 +14,13 @@
  * limitations under the License.
  */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Quicksand:wght@300&display=swap');
+
+
 body {
   margin: 0;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* Disable ugly boxes around images in IE10 */
@@ -52,7 +57,7 @@ a img{
   right: 20%;
   bottom: -26px;
   z-index: 3;
-  background: #64ffda !important;
+  background: #d62828 !important;
   color: black !important;
 }
 
@@ -74,16 +79,16 @@ a img{
 }
 
   .android-header .material-icons {
-    color: #767777 !important;
+    color: #fcbf49 !important;
   }
 
   .android-header .mdl-layout__drawer-button {
     background: transparent;
-    color: #767777;
+    color: #fcbf49;
   }
 
   .android-header .mdl-navigation__link {
-    color: #757575;
+    color: #003049;
     font-weight: 700;
     font-size: 14px;
   }
@@ -123,7 +128,7 @@ a img{
   }
 
     .android-navigation .mdl-navigation__link:hover {
-      border-bottom: 4px solid #8bc34a;
+      border-bottom: 4px solid #d62828;
     }
 
   .android-search-box {
@@ -147,17 +152,17 @@ a img{
 
   .android-drawer-separator {
     height: 1px;
-    background-color: #dcdcdc;
+    background-color: #d62828;
     margin: 8px 0;
   }
 
   .android-drawer .mdl-navigation__link.mdl-navigation__link {
     font-size: 14px;
-    color: #757575;
+    color: #eae2b7;
   }
 
   .android-drawer span.mdl-navigation__link.mdl-navigation__link {
-    color: #8bc34a;
+    color: #d62828;
   }
 
   .android-drawer .mdl-layout-title {
@@ -313,7 +318,7 @@ a img{
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: #37474f;
+  background-color: #003049;
 }
 
 .android-wear-band-text {
@@ -345,12 +350,12 @@ a img{
 
 .android-alt-link {
   text-decoration: none;
-  color: #64ffda !important;
+  color: #fcbf49 !important;
   font-size: 16px;
 }
 
   .android-alt-link:hover {
-    color: #00bfa5 !important;
+    color: #f77f00 !important;
   }
 
   .android-alt-link .material-icons {
@@ -392,6 +397,7 @@ a img{
   }
 
 .android-card-container {
+
 }
 
   .android-card-container .mdl-card__media {
@@ -543,13 +549,14 @@ a img{
 }
 
 .demo-card-wide.mdl-card {
-  width: 512px;
+  max-width: 60%;
 }
 #emprendedores-card > .mdl-card__title {
   color: #fff;
   height: 176px;
   background: url('../images/emprendedores1.png') center / cover;
 }
+
 
 #download-card > .mdl-card__title {
   color: #fff;
@@ -582,4 +589,3 @@ a img{
 
     margin: 0 auto;
 }
-
